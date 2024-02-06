@@ -10,13 +10,9 @@ Ruby Version: v2.7.4
 To run on a development server:  
  - First, use the readme for the backend to start the rails server
  - Install dependencies: $ npm install
+ - In a separate terminal window run the frontend in a browser: $ npm start --prefix client
 
-If you are on a mac, the following command should work:
- - In a separate terminal window run the frontend in a browser: $ npm start
-
-If you are using Windows, try the following instead:
- - Change the start script in /package.json to: "start": "set PORT=4000 && react-scripts start"
- - In a separate terminal window run the frontend in a browser: $ npm start
+If you are using Windows and that didn't work, try changing the start script in /package.json to: "start": "set PORT=4000 && react-scripts start" then try the aformentioned commands again.
 
 ## Future plans and other notes
 

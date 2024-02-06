@@ -16,12 +16,15 @@ function MainPage() {
 
     // job data
     const [jobs, setJobs] = useState([])
-    // const uniqSkills = new Set(skills.map(skill => skill.name))
+    const [uniqSkillCount, setUniqSkillCount] = useState(0)
 
     // fetch data from server
     useEffect(() => {
         fetch('/jobs').then(rspns => {
-            if (rspns.ok) rspns.json().then(setJobs)
+            if (rspns.ok) rspns.json().then(rspns => {
+                setJobs(rspns.jobs)
+                setUniqSkillCount(rspns.unique_skills_count)
+            })
             else console.log(rspns) // dev only
         })
     }, [])
@@ -30,7 +33,7 @@ function MainPage() {
         <table className="job-applicants">
             <Header />
             <Body jobs={jobs}/>
-            {/* <Footer numApplicants={applicants.length} numUniqSkills={uniqSkills.size}/> */}
+            <Footer numApplicants={jobs.reduce((acc, job) => acc + job.applicants.length, 0)} numUniqSkills={uniqSkillCount}/>
         </table>
     );
 }
