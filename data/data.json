@@ -4,6 +4,7 @@
             "id": 1,
             "name": "Russ Waters",
             "email": "russ@russwaters.com",
+            "website": "russwaters.com",
             "cover_letter": "Lorem ipsum Laborum adipisicing exercitation laboris enim sint ullamco sint id mollit commodo anim dolor enim occaecat pariatur proident Duis ut in.",
             "job_id": 1
         },
@@ -26,7 +27,9 @@
         {
             "id": 4,
             "name": "Katarina Mills",
+            "email": "katarina@katarinamills.com",
             "website": "katarinamills.com",
+            "cover_letter": "Lorem ipsum Dolore laboris dolor non adipisicing qui consequat adipisicing tempor eu nulla elit in anim do aute in nulla velit laboris consectetur laborum ex Ut cillum officia in veniam Duis sint occaecat consectetur cillum sint ea cupidatat in adipisicing.",
             "job_id": 1
         },
         {
@@ -68,16 +71,8 @@
             "name": "Web Developer"
         },
         {
-            "id": 3,
-            "name": "Web Designer"
-        },
-        {
             "id": 2,
-            "name": "Test Engineer"
-        },
-        {
-            "id": 4,
-            "name": "Project Manager"
+            "name": "Web Designer"
         }
     ],
     "skills": [
@@ -127,9 +122,19 @@
             "applicant_id": 4
         },
         {
+            "id": 10,
+            "name": "Fireworks",
+            "applicant_id": 5
+        },
+        {
             "id": 11,
             "name": "Fireworks",
             "applicant_id": 6
+        },
+        {
+            "id": 12,
+            "name": "Illustrator",
+            "applicant_id": 7
         },
         {
             "id": 13,
